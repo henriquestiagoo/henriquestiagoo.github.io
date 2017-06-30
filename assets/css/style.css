@@ -1,0 +1,221 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans: 400, 300);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+/* fonts */
+html, 
+body {
+  background: #94b8b8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  -webkit-perspective: 2500px;
+          perspective: 2500px;
+}
+
+.card {
+  background: #f2f2f2;
+  height: 550px;
+  width: 500px;
+  margin: 3em auto;
+  border-radius: .2em;
+  box-shadow: 0 2.5em .9em -2em #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .8s cubic-bezier(.63,-0.32,.4,1.39);
+          transition: -webkit-transform .8s cubic-bezier(.63,-0.32,.4,1.39);
+          transition: transform .8s cubic-bezier(.63,-0.32,.4,1.39);
+          transition: transform .8s cubic-bezier(.63,-0.32,.4,1.39), -webkit-transform .8s cubic-bezier(.63,-0.32,.4,1.39);
+}
+
+.card-flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.pic {
+  margin-top: 0px;
+}
+
+.initials {
+  display: inline-block;
+  font-family: 'Poiret One';
+  font-size: 7em;
+  color: #333;
+  font-weight: 500;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #FB0044;
+  margin-bottom: 8px;
+  margin-bottom: .5rem;
+}
+
+.words {
+  left: 7%;
+  margin-top: 290px;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #333;
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #05aefc;
+  border-bottom: 1px solid #09FC83;
+  margin-bottom: 8px;
+  margin-bottom: .5rem;
+}
+
+.footer {
+  margin-top: 5px;
+  left: 38%;
+  display: inline-block;
+  font-size: 1em;
+  color: black;
+  position: relative;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-bottom: .5rem;
+}
+
+
+.initials-back {
+  font-size: 3em;
+  margin: 1em 0;
+  border-bottom: 1px solid #FB0044;
+}
+
+.desc {
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.desc-back {
+  font-weight: 200;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin-left: 50px;
+}
+
+.contact {
+  text-align: center; 
+  font-weight: 300;
+  position: relative; 
+  margin: 14em 0 1em 0;
+}
+
+hr {
+  width: 90%;
+}
+
+.twitter-front {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#twitter-front {
+  color: #09FC83;
+  text-decoration: none;
+}
+
+.links {
+  width: 60%;
+  text-align: center;
+  border-top: 1px solid #05aefc;
+  border-bottom: 1px solid #09FC83;
+  margin: 0 auto;
+}
+
+.links > a {
+  margin: 1em;
+  color: black;
+}
+
+#facebook-back {
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+#github-back {
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+#email-back {
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+.outer-ring,
+.inner-box {
+  fill: #333;
+}
+
+#click-me {
+  color: #333;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1em;
+  -webkit-animation: fade 3s infinite ease-in-out;
+          animation: fade 3s infinite ease-in-out;
+}
+
+#footer {
+  color: #333;
+  position: absolute;
+  left: 46%;
+  bottom: 6.5em;
+}
+
+#copyright {
+  font-size: 13px;
+  color: #333;
+  position: absolute;
+  left: 40%;
+  bottom: 7.5em;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+   
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+   
+  100% {
+    opacity: 1;
+  }
+}
