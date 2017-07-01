@@ -149,6 +149,12 @@ hr {
   width: 45px;
 }
 
+#insta-back {
+  position: relative;
+  height: 35px;
+  width: 35px;
+}
+
 #github-back {
   position: relative;
   height: 45px;
